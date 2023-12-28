@@ -1,10 +1,12 @@
 import React from "react";
 import Container from "../container/container";
-import "./dashboard.css"
+import "./dashboard.css";
 
-function Dashboard(){
-    return(<>
-    <Container />
-    </>);
+function Dashboard() {
+  return (
+    <>
+      <Container />
+    </>
+  );
 }
 export default Dashboard;

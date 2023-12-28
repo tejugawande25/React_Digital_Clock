@@ -17,9 +17,15 @@ function Container() {
     <>
       <div class="hero">
         <div class="container">
-          <div class="clock hr">{(time.getHours<10?"0":" ")+formattedHours}</div>
-          <div class="clock min">{(formattedMinutes<10?"0":" ")+formattedMinutes}</div>
-          <div class="clock sec">{(formattedSeconds < 10 ?"0":"")+formattedSeconds}</div>
+          <div class="clock hr">
+            {(time.getHours < 10 ? "0" : " ") + formattedHours}
+          </div>
+          <div class="clock min">
+            {(formattedMinutes < 10 ? "0" : " ") + formattedMinutes}
+          </div>
+          <div class="clock sec">
+            {(formattedSeconds < 10 ? "0" : "") + formattedSeconds}
+          </div>
         </div>
       </div>
     </>
